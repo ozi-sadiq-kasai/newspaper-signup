@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<main data-visible="true">
+  <div id="info">
+    <h1 id="info__header">Stay updated!</h1>
+    <p id="info__para">Join 60,000+ product managers receiving monthly updates on:</p>
+    <ul id="info__list">
+      <li class="info__item"><img class="icon__ticks" src="./assets/images/icon-list.svg" alt="icon"><p>Product discovery and building what matters</p></li>
+      <li class="info__item"><img class="icon__ticks" src="./assets/images/icon-list.svg" alt="icon"><p>Measuring to ensure updates are a success</p></li>
+      <li class="info__item"><img class="icon__ticks" src="./assets/images/icon-list.svg" alt="icon"><p>And much more!</p></li>
+    </ul>
+    <label id="email__label"for="email">Email address</label>
+    <span class="error" data-visible = 'false'>Valid email required</span>
+    <input type="email" id="email" name="email" placeholder="email@company.com">
+    <button type="button"id="sub">Subscribe to monthly newsletter</button>
+  </div>
+  <div class="image">
+    <img class="image__desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="image">
+    <img class="image__mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="image">
+  </div>  
+    
+</main>
+<section id='success' data-visible="false">
+  <article id="success__article">
+      <img  id="success__svg"src="./assets/images/icon-success.svg" alt="icon">
+      <h2 id="success__heading">Thanks for subscribing!</h2>
+      <p id="success__para">
+        A confirmation email has been sent to <span id="success__span">ash@loremcompany.com.</span> 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    <button id="success__btn">
+      Dismiss message
+    </button>
+  </article>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
